@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Loading from '@/components/Loading';
 import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import { IoArrowRedo ,IoArrowUndo} from "react-icons/io5";
-
 interface GeneratedResult {
     expression: string;
     answer: string;
@@ -30,9 +29,10 @@ const Calculator = () => {
     const [redoHistory, setRedoHistory] = useState<ImageData[]>([]);
     const [isLoading, setIsLoading] = useState(false);
 
+    
     // Render latex, set up canvas, handle reset
     useEffect(() => {
-        if (latexExpression.length > 0 && window.MathJax) {
+        if (latexExpression.length > 0 && window.MathJax ) {
             setTimeout(() => {
                 window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub]);
             }, 0);
