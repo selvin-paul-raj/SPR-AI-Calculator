@@ -6,7 +6,9 @@
 body {
   @apply bg-black text-white;
 }
-
+body{
+  overscroll-behavior-y: contain;
+}
 canvas {
   background-color: #000;
 }
