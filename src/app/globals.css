@@ -1,21 +1,22 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-black text-white;
+}
+
+canvas {
+  background-color: #000;
+}
+.katex-display { overflow: auto hidden }
+.katex-display > .katex { white-space: normal }
+/* Add space between broken lines: */
+.katex-display > .base { margin: 0.25em 0 }
+/* Compensate by reducing space around display math */
+.katex-display { margin: 0.5em 0; }
+
+.title{
+  @apply bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-blue-500 via-white to-cyan-400 bg-clip-text text-transparent
 }
