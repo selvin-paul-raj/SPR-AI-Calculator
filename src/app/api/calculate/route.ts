@@ -70,6 +70,7 @@ Analyze the equation or expression in this image and return the answer in one of
 4. Graphical problems: [{"expr": "given expression", "result": "calculated answer"}]
 5. Abstract concepts: [{"expr": "explanation", "result": "concept"}]
 
+
 Variables to use: ${JSON.stringify(dict_of_vars || {})}
 Return the expressions in LaTeX format.`;
 

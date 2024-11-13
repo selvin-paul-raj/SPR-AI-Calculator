@@ -20,5 +20,5 @@ canvas {
 .katex-display { margin: 0.5em 0; }
 
 .title{
-  @apply bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-blue-500 via-white to-cyan-400 bg-clip-text text-transparent
+  @apply bg-gradient-to-br from-slate-500 via-white to-slate-600 bg-clip-text text-transparent
 }

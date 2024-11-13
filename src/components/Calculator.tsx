@@ -270,7 +270,8 @@ const Calculator = () => {
         <div className="flex ">
            <div className='flex  w-full h-14 bg-white-900 md:h-20
             bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-100   z-[99]  border-b justify-center md:border-none'>
-           <a href='https://github.com/selvin-paul-raj' target='_blank' className='text-start title z-50 w-full  px-4  text-2xl md:text-6xl font-extrabold mt-2  md:text-center'>SPR&apos;s AI Calculator</a>
+           <a href='https://github.com/selvin-paul-raj' target='_blank' className='text-center title z-50 w-full  px-4  text-xl md:text-6xl font-extrabold mt-3  md:text-center'>
+           SPR&apos;s AI Calculator</a>
            {/* add undo & redo  */} 
            <button onClick={undoLastDraw} className='z-50 px-2 md:absolute  md:top-10 text-2xl md:right-[17rem] hover:text-white/70'><IoArrowUndo /></button>
            <button onClick={redoLastUndo} className='z-50 px-4 md:absolute md:top-10 text-2xl md:right-[13rem] hover:text-white/70'><IoArrowRedo /></button>
